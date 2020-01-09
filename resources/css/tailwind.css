@@ -1,0 +1,24 @@
+@tailwind base;
+
+@tailwind components;
+
+.menu-list{
+    @apply border-b py-3 border-indigo-500 font-semibold
+}
+
+.list-link{
+    @apply pl-3
+}
+
+.sub-menu{
+    @apply bg-indigo-500  text-sm  mt-3 font-normal hidden
+}
+
+.sub-menu-list{
+}
+
+.sub-active{
+    @apply bg-teal-500;
+}
+
+@tailwind utilities;
