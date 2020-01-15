@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "text": "Anasayfa",
+        "url": "#",
+        "title": "deneme",
+        "icon": "icofont-home",
+        "route": "home-settings",
+        "subList": [
+            {
+                "id": 6,
+                "text": "Description",
+                "url": "asd",
+                "title": "deneme",
+                "route": "description",
+                "parent": 1
+            },
+            {
+                "id": 7,
+                "text": "Default Title",
+                "url": "asd",
+                "title": "deneme",
+                "route": "#",
+                "parent": 1
+            },
+            {
+                "id": 8,
+                "text": "Footer Text",
+                "url": "#",
+                "title": "deneme",
+                "route": "#",
+                "parent": 1
+            }
+        ],
+        "parent": 0
+    },
+    {
+        "id": 2,
+        "text": "Kullanıcılar",
+        "url": "cey",
+        "title": "deneme",
+        "icon": "icofont-users-alt-2",
+        "subList": [],
+        "parent": 0
+    },
+    {
+        "id": 3,
+        "text": "İçerik",
+        "url": "asd",
+        "title": "deneme",
+        "icon": "icofont-page",
+        "subList": [],
+        "parent": 0
+    },
+    {
+        "id": 4,
+        "text": "Bakım Modu",
+        "url": "",
+        "title": "deneme",
+        "icon": "icofont-tools-alt-2",
+        "subList": [],
+        "parent": 0
+    },
+    {
+        "id": 5,
+        "text": "Admin Panel",
+        "url": "",
+        "title": "deneme",
+        "icon": "icofont-business-man",
+        "subList": [],
+        "parent": 0
+    }
+
+]

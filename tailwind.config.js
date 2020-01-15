@@ -1,16 +1,29 @@
 module.exports = {
-  theme: {
-    extend: {
-        /*margin: (theme, { negative }) => ({
-            auto: 'auto',
-            ...theme('spacing'),
-            ...negative(theme('spacing')),
-        }),*/
-
-        'w-100' : 'width:100%'
-    }
-  },
-  variants: {
-  },
-  plugins: []
+    theme: {
+        fontFamily: {
+            'lato': ['"Lato"', 'sans-serif'],
+            'roboto': ["'Roboto'", 'sans-serif'],
+            'public': ["'Public Sans'", 'sans-serif'],
+            'exo': ["'Exo 2'", 'sans-serif']
+        },
+        extend: {
+            minHeight:
+                (theme) => ({
+                    ...theme('spacing'),
+                }),
+            minWidth:
+                (theme) => ({
+                    ...theme('spacing'),
+                }),
+            height: {},
+            fontSize: {
+                md: '0.92rem'
+            }
+        }
+    },
+    variants: {
+        borderWidth: ['responsive', 'hover', 'focus']
+    },
+    plugins: []
 }
+

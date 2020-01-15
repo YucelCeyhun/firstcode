@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="font-sans">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="{{asset('fonts/icofont/icofont.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/tailwind.css')}}">
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
+
 </head>
 <body class="bg-gray-100">
 <div id="wrapper" class="flex w-100 items-stretch">
@@ -16,7 +17,7 @@
     @include('admin.sidebar')
     <div class="main px-6 py-3 w-full">
         @include('admin.header')
-        <div class="content p-3">
+        <div class="content p-6 my-6 bg-white min-h-screen box-white">
             @yield('content')
         </div>
         @include('admin.footer')

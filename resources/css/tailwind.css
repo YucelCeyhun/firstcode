@@ -2,6 +2,11 @@
 
 @tailwind components;
 
+
+.box-white{
+    @apply text-gray-700 bg-white shadow
+}
+
 .menu-list{
     @apply border-b py-3 border-indigo-500 font-semibold
 }
@@ -19,6 +24,14 @@
 
 .sub-active{
     @apply bg-teal-500;
+}
+
+.form-input{
+    @apply text-gray-700 font-semibold border-2 border-gray-400 py-2 px-1 bg-gray-100 outline-none w-full
+}
+
+.form-input:focus{
+    @apply border-indigo-500 bg-white
 }
 
 @tailwind utilities;
