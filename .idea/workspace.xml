@@ -133,14 +133,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ceyhun.Yucel\Desktop\firstcode\resources\views\admin\content" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ceyhun.Yucel\Desktop\firstcode\public\images" />
       <recent name="C:\Users\Ceyhun.Yucel\Desktop\firstcode\resources\views\admin\home-settings\description" />
       <recent name="C:\Users\Ceyhun.Yucel\Desktop\firstcode\resources\views\admin" />
       <recent name="C:\Users\Ceyhun.Yucel\Desktop\firstcode\public\fonts" />
       <recent name="C:\Users\Ceyhun.Yucel\Desktop\firstcode\resources\css" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Ceyhun.Yucel\Desktop\firstcode\resources\views\admin\content" />
     </key>
   </component>
   <component name="RunManager">
@@ -182,6 +183,53 @@
       <workItem from="1578496678988" duration="14973000" />
       <workItem from="1578556839421" duration="15444000" />
       <workItem from="1578576342279" duration="4139000" />
+      <workItem from="1578587847373" duration="675000" />
+      <workItem from="1578652147870" duration="592000" />
+      <workItem from="1578656916213" duration="4349000" />
+      <workItem from="1578663726391" duration="530000" />
+      <workItem from="1578665525566" duration="3000" />
+      <workItem from="1578665600821" duration="58000" />
+      <workItem from="1578667988869" duration="614000" />
+      <workItem from="1578672079112" duration="1640000" />
+      <workItem from="1578733863031" duration="576000" />
+      <workItem from="1578746857667" duration="2189000" />
+      <workItem from="1578758266330" duration="12069000" />
+      <workItem from="1578829057034" duration="850000" />
+      <workItem from="1578830487895" duration="196000" />
+      <workItem from="1578903602385" duration="1709000" />
+      <workItem from="1578919508335" duration="2161000" />
+      <workItem from="1578922250170" duration="3507000" />
+      <workItem from="1578926684098" duration="1878000" />
+      <workItem from="1578938923731" duration="653000" />
+      <workItem from="1578995107807" duration="2790000" />
+      <workItem from="1578997990398" duration="885000" />
+      <workItem from="1579022583562" duration="6384000" />
+      <workItem from="1579074961896" duration="3896000" />
+      <workItem from="1579090730366" duration="3855000" />
+      <workItem from="1579103047939" duration="4616000" />
+      <workItem from="1579109186617" duration="548000" />
+      <workItem from="1579111158978" duration="8964000" />
+      <workItem from="1579122246791" duration="3637000" />
+      <workItem from="1579126241606" duration="280000" />
+      <workItem from="1579162001923" duration="2988000" />
+      <workItem from="1579176528944" duration="1286000" />
+      <workItem from="1579193702706" duration="154000" />
+      <workItem from="1579208621950" duration="4974000" />
+      <workItem from="1579248761054" duration="4744000" />
+      <workItem from="1579262549576" duration="111000" />
+      <workItem from="1579349504616" duration="58000" />
+      <workItem from="1579359061389" duration="2417000" />
+      <workItem from="1579365399438" duration="2000" />
+      <workItem from="1579369876978" duration="1654000" />
+      <workItem from="1579422259853" duration="4242000" />
+      <workItem from="1579517318016" duration="3629000" />
+      <workItem from="1579591398609" duration="5890000" />
+      <workItem from="1579601340779" duration="2486000" />
+      <workItem from="1579609729038" duration="1980000" />
+      <workItem from="1579614132696" duration="2286000" />
+      <workItem from="1579617744208" duration="193000" />
+      <workItem from="1579620099645" duration="6785000" />
+      <workItem from="1579630731741" duration="2208000" />
     </task>
     <servers />
   </component>
@@ -201,13 +249,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1578387720785" />
-    <state x="636" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1578576342257">
+    <state width="512" height="446" key="SwitcherDM" timestamp="1579030256953">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="636" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578576342257" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1578580142584">
+    <state width="512" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1579030256953" />
+    <state x="636" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1578587850234">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1578580142584" />
+    <state x="636" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578587850234" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1579631012917">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1579631012917" />
   </component>
 </project>

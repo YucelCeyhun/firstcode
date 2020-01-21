@@ -76,3 +76,21 @@ body {
           animation: fadeInBottom 0.3s;
 }
 
+.search:focus + button {
+  border-color: #667eea;
+  color: #667eea;
+  background-color: #FFFFFF;
+}
+
+.icon-wrapper {
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.icon-wrapper:hover {
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+

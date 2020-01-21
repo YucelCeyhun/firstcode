@@ -54,6 +54,20 @@ body {
     animation: fadeInBottom 0.3s;
 }
 
+.search:focus + button{
+    border-color: #667eea;
+    color: #667eea;
+    background-color: #FFFFFF;
+}
+
+.icon-wrapper{
+    transition:transform 0.3s ease-in-out;
+    ;&:hover{
+        transform: translateY(-50%);
+    }
+}
+
+
 
 //.header-list-item {
 //    &::after {

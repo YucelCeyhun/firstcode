@@ -10,6 +10,7 @@ $(function () {
         $(this).next('.sub-menu').toggleClass('active');
         $(this).parent('.menu-list').toggleClass('pb-0');
     })
+
 })
 
 const app = new Vue({
@@ -18,3 +19,4 @@ const app = new Vue({
         AdminSideMenu
     }
 });
+

@@ -2,10 +2,11 @@
 
 try {
     //window.Popper = require('popper.js').default;
-     window.$ = window.jQuery = require('jquery');
+    window.$ = window.jQuery = require('jquery');
 
     //require('bootstrap');
-} catch (e) {}
+} catch (e) {
+}
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
@@ -36,16 +37,16 @@ try {
 // });
 
 
-// import hljs from 'highlight.js/lib/highlight';
-// import 'highlight.js/styles/monokai-sublime.css';
-// hljs.registerLanguage('javascript',require('highlight.js/lib/languages/javascript'));
-// hljs.registerLanguage('php',require('highlight.js/lib/languages/php'));
-// hljs.registerLanguage('scss',require('highlight.js/lib/languages/scss'));
-// hljs.registerLanguage('css',require('highlight.js/lib/languages/css'));
-// hljs.registerLanguage('htmlbars',require('highlight.js/lib/languages/htmlbars'));
-// hljs.registerLanguage('http',require('highlight.js/lib/languages/http'));
-// hljs.registerLanguage('sql',require('highlight.js/lib/languages/sql'));
-// hljs.initHighlightingOnLoad();
+import hljs from 'highlight.js/lib/highlight';
+import 'highlight.js/styles/monokai-sublime.css';
+hljs.registerLanguage('javascript',require('highlight.js/lib/languages/javascript'));
+hljs.registerLanguage('php',require('highlight.js/lib/languages/php'));
+hljs.registerLanguage('scss',require('highlight.js/lib/languages/scss'));
+hljs.registerLanguage('css',require('highlight.js/lib/languages/css'));
+hljs.registerLanguage('htmlbars',require('highlight.js/lib/languages/htmlbars'));
+hljs.registerLanguage('http',require('highlight.js/lib/languages/http'));
+hljs.registerLanguage('sql',require('highlight.js/lib/languages/sql'));
+hljs.initHighlightingOnLoad();
 
 
 
