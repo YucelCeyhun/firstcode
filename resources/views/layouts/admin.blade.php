@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="{{asset('fonts/icofont/icofont.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/tailwind.css')}}">
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
-
 </head>
 <body class="bg-gray-100">
 <div id="wrapper" class="flex w-100 items-stretch">
@@ -23,7 +22,7 @@
         @include('admin.footer')
     </div>
 </div>
-<script src="{{asset('js/app.js')}}"></script>
+<script src="{{asset('js/admin.js')}}"></script>
 @yield('scripts')
 </body>
 </html>

@@ -46,28 +46,54 @@ body {
 //}
 
 
-.header-list-item > :nth-child(2){
+.header-list-item > :nth-child(2) {
     display: none;
 }
-.header-list-item:hover > :nth-child(2){
+
+.header-list-item:hover > :nth-child(2) {
     display: block;
     animation: fadeInBottom 0.3s;
 }
 
-.search:focus + button{
+.search:focus + button {
     border-color: #667eea;
     color: #667eea;
     background-color: #FFFFFF;
 }
 
-.icon-wrapper{
-    transition:transform 0.3s ease-in-out;
-    ;&:hover{
+.icon-wrapper {
+    transition: transform 0.3s ease-in-out;;
+
+    &:hover {
         transform: translateY(-50%);
     }
 }
 
+.join-discord {
+    background-image: url("../../public/images/home-image.png");
+    background-repeat: repeat;
+    min-height: 22.5rem;
+}
 
+.editor-box {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+.close {
+    top: 1rem;
+    right: 1rem;
+}
+
+.box-wrapper {
+    z-index: 888;
+}
+
+.text-indent{
+    text-indent: 2rem
+}
 
 //.header-list-item {
 //    &::after {

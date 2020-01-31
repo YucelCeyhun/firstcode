@@ -18,6 +18,7 @@
       <list>
         <option value="SCSS File" />
         <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -110,6 +111,11 @@
       <path value="$PROJECT_DIR$/vendor/symfony/debug" />
       <path value="$PROJECT_DIR$/vendor/symfony/process" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
+      <path value="$PROJECT_DIR$/vendor/ckeditor/ckeditor" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
     </include_path>
   </component>
   <component name="ProjectId" id="1W1s2ni05TTJSgqLrIjQMTYFh4e" />
@@ -137,11 +143,11 @@
       <recent name="C:\Users\Ceyhun.Yucel\Desktop\firstcode\resources\views\admin\content" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ceyhun.Yucel\Desktop\firstcode\resources\views\admin\home-settings\category" />
+      <recent name="C:\Users\Ceyhun.Yucel\Desktop\firstcode\resources\views\admin\home-settings" />
       <recent name="C:\Users\Ceyhun.Yucel\Desktop\firstcode\public\images" />
       <recent name="C:\Users\Ceyhun.Yucel\Desktop\firstcode\resources\views\admin\home-settings\description" />
       <recent name="C:\Users\Ceyhun.Yucel\Desktop\firstcode\resources\views\admin" />
-      <recent name="C:\Users\Ceyhun.Yucel\Desktop\firstcode\public\fonts" />
-      <recent name="C:\Users\Ceyhun.Yucel\Desktop\firstcode\resources\css" />
     </key>
   </component>
   <component name="RunManager">
@@ -230,6 +236,41 @@
       <workItem from="1579617744208" duration="193000" />
       <workItem from="1579620099645" duration="6785000" />
       <workItem from="1579630731741" duration="2208000" />
+      <workItem from="1579638449344" duration="169000" />
+      <workItem from="1579678744650" duration="5067000" />
+      <workItem from="1579690789642" duration="187000" />
+      <workItem from="1579691807510" duration="1781000" />
+      <workItem from="1579694873825" duration="1725000" />
+      <workItem from="1579696940591" duration="3498000" />
+      <workItem from="1579702235106" duration="2094000" />
+      <workItem from="1579709750813" duration="4806000" />
+      <workItem from="1579725289723" duration="415000" />
+      <workItem from="1579767783071" duration="6021000" />
+      <workItem from="1579780986787" duration="524000" />
+      <workItem from="1579802768939" duration="4533000" />
+      <workItem from="1579812914001" duration="4678000" />
+      <workItem from="1579855525448" duration="5364000" />
+      <workItem from="1579940531046" duration="44000" />
+      <workItem from="1579940699658" duration="2399000" />
+      <workItem from="1579943140853" duration="5632000" />
+      <workItem from="1579955837837" duration="3378000" />
+      <workItem from="1579963498299" duration="7170000" />
+      <workItem from="1579977812231" duration="658000" />
+      <workItem from="1580032399979" duration="17325000" />
+      <workItem from="1580055407954" duration="7310000" />
+      <workItem from="1580072430071" duration="118000" />
+      <workItem from="1580118684763" duration="1764000" />
+      <workItem from="1580124664913" duration="140000" />
+      <workItem from="1580138930113" duration="261000" />
+      <workItem from="1580245426085" duration="1152000" />
+      <workItem from="1580289174230" duration="3101000" />
+      <workItem from="1580303134937" duration="2081000" />
+      <workItem from="1580330895203" duration="4162000" />
+      <workItem from="1580371460467" duration="8250000" />
+      <workItem from="1580394602886" duration="193000" />
+      <workItem from="1580417496862" duration="2706000" />
+      <workItem from="1580461739992" duration="7810000" />
+      <workItem from="1580484702191" duration="6975000" />
     </task>
     <servers />
   </component>
@@ -241,10 +282,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="701" y="311" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1578392986003" />
-    <state x="683" y="319" key="NewPhpClassDialog" timestamp="1578561606599">
+    <state x="640" y="257" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1579940559047">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="683" y="319" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578561606599" />
+    <state x="640" y="257" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579940559047" />
+    <state x="690" y="276" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1580490891026">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="276" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580490891026" />
+    <state x="683" y="319" key="NewPhpClassDialog" timestamp="1579770134623">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="683" y="319" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579770134623" />
     <state x="461" y="163" key="SettingsEditor" timestamp="1578387720785">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -257,9 +306,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="636" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578587850234" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1579631012917">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1579972664559">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1579631012917" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1579972664559" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1580493316976">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580493316976" />
   </component>
 </project>

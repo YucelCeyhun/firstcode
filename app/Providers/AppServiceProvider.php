@@ -25,6 +25,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        View::composer('*',RouteNameComposer::class);
+        View::composer('admin/*',RouteNameComposer::class);
     }
 }

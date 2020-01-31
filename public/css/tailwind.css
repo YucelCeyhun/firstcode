@@ -660,6 +660,12 @@ video {
   background-color: #38b2ac;
 }
 
+.form-group{
+  display: -webkit-box;
+  display: flex;
+  margin-top: 1.5rem
+}
+
 .form-input{
   color: #4a5568;
   font-weight: 600;
@@ -679,9 +685,52 @@ video {
   background-color: #fff
 }
 
+.form-label{
+  font-weight: 600;
+  color: #718096;
+  width: 50%;
+  display: inline-block
+}
+
+.form-checkbox{
+  background-color: #f7fafc;
+  border-width: 2px;
+  border-color: #cbd5e0;
+  padding: 1rem;
+  outline: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none
+}
+
+.form-checkbox:checked{
+  background-color: #718096
+}
+
+.btn {
+  background-color: #4299e1;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: 600;
+  color: #fff
+}
+
+.btn:hover{
+  background-color: #63b3ed;
+}
+
+@media (min-width: 1024px) {
+  .form-label  {
+    width: 16.666667%
+  }
+}
+
 .editor{
   color: #4a5568;
   border-width: 2px;
+  border-top-width: 0;
   border-color: #cbd5e0;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -691,11 +740,6 @@ video {
   outline: 0;
   width: 100%;
   font-family: 'Exo 2', sans-serif
-}
-
-.editor:focus{
-  border-color: #667eea;
-  background-color: #fff
 }
 
 .sr-only {

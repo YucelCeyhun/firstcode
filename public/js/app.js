@@ -115,6 +115,7 @@ var _menu__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/__webpack_requir
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "AdminSideMenu",
@@ -133,6 +134,12 @@ var _menu__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/__webpack_requir
     },
     defaultAnchor: function defaultAnchor(event) {
       event.preventDefault();
+    },
+    findParentRoute: function findParentRoute(parentId) {
+      var element = this.list.find(function (element) {
+        return element.id == parentId;
+      });
+      return element.route;
     }
   }
 });
@@ -13640,7 +13647,7 @@ function addStyle (obj, options) {
 	// If a transform function was defined, run it on the css
 	if (options.transform && obj.css) {
 	    result = typeof options.transform === 'function'
-		 ? options.transform(obj.css) 
+		 ? options.transform(obj.css)
 		 : options.transform.default(obj.css);
 
 	    if (result) {
@@ -14025,7 +14032,13 @@ var render = function() {
                     "a",
                     {
                       staticClass: "sub-list-link ml-8 ",
-                      attrs: { href: item.url, title: item.title }
+                      attrs: {
+                        href:
+                          "/fc-admin/" +
+                          _vm.findParentRoute(item.parent) +
+                          item.url,
+                        title: item.title
+                      }
                     },
                     [_vm._v(_vm._s(item.text))]
                   )
@@ -26184,7 +26197,7 @@ module.exports = g;
 
 /***/ "./resources/js/app.js":
 /*!*****************************!*\
-  !*** ./resources/js/app.js ***!
+  !*** ./resources/js/admin.js ***!
   \*****************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -26262,6 +26275,7 @@ highlight_js_lib_highlight__WEBPACK_IMPORTED_MODULE_0___default.a.registerLangua
 highlight_js_lib_highlight__WEBPACK_IMPORTED_MODULE_0___default.a.registerLanguage('http', __webpack_require__(/*! highlight.js/lib/languages/http */ "./node_modules/highlight.js/lib/languages/http.js"));
 highlight_js_lib_highlight__WEBPACK_IMPORTED_MODULE_0___default.a.registerLanguage('sql', __webpack_require__(/*! highlight.js/lib/languages/sql */ "./node_modules/highlight.js/lib/languages/sql.js"));
 highlight_js_lib_highlight__WEBPACK_IMPORTED_MODULE_0___default.a.initHighlightingOnLoad();
+highlight_js_lib_highlight__WEBPACK_IMPORTED_MODULE_0___default.a.autoDetection();
 
 /***/ }),
 
@@ -26292,7 +26306,7 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
   null,
   "5ca63cea",
   null
-  
+
 )
 
 /* hot reload */
@@ -26312,7 +26326,7 @@ component.options.__file = "resources/js/components/AdminSideMenu.vue"
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AdminSideMenu_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./AdminSideMenu.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/AdminSideMenu.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AdminSideMenu_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AdminSideMenu_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]);
 
 /***/ }),
 
@@ -26341,7 +26355,7 @@ __webpack_require__.r(__webpack_exports__);
 /*! exports provided: 0, 1, 2, 3, 4, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("[{\"id\":1,\"text\":\"Anasayfa\",\"url\":\"#\",\"title\":\"deneme\",\"icon\":\"icofont-home\",\"route\":\"home-settings\",\"subList\":[{\"id\":6,\"text\":\"Description\",\"url\":\"asd\",\"title\":\"deneme\",\"route\":\"description\",\"parent\":1},{\"id\":7,\"text\":\"Default Title\",\"url\":\"asd\",\"title\":\"deneme\",\"route\":\"#\",\"parent\":1},{\"id\":8,\"text\":\"Footer Text\",\"url\":\"#\",\"title\":\"deneme\",\"route\":\"#\",\"parent\":1}],\"parent\":0},{\"id\":2,\"text\":\"Kullanıcılar\",\"url\":\"cey\",\"title\":\"deneme\",\"icon\":\"icofont-users-alt-2\",\"subList\":[],\"parent\":0},{\"id\":3,\"text\":\"İçerik\",\"url\":\"asd\",\"title\":\"deneme\",\"icon\":\"icofont-page\",\"subList\":[],\"parent\":0},{\"id\":4,\"text\":\"Bakım Modu\",\"url\":\"\",\"title\":\"deneme\",\"icon\":\"icofont-tools-alt-2\",\"subList\":[],\"parent\":0},{\"id\":5,\"text\":\"Admin Panel\",\"url\":\"\",\"title\":\"deneme\",\"icon\":\"icofont-business-man\",\"subList\":[],\"parent\":0}]");
+module.exports = JSON.parse("[{\"id\":1,\"text\":\"Anasayfa\",\"url\":\"#\",\"title\":\"deneme\",\"icon\":\"icofont-home\",\"route\":\"home-settings\",\"subList\":[{\"id\":6,\"text\":\"Description\",\"url\":\"/description/\",\"title\":\"deneme\",\"route\":\"description\",\"parent\":1},{\"id\":7,\"text\":\"Category\",\"url\":\"/category/\",\"title\":\"Anasayfa kategorileri\",\"route\":\"category\",\"parent\":1}],\"parent\":0},{\"id\":2,\"text\":\"Kullanıcılar\",\"url\":\"cey\",\"title\":\"deneme\",\"icon\":\"icofont-users-alt-2\",\"subList\":[],\"parent\":0},{\"id\":3,\"text\":\"İçerik\",\"url\":\"asd\",\"title\":\"deneme\",\"icon\":\"icofont-page\",\"subList\":[],\"parent\":0},{\"id\":4,\"text\":\"Bakım Modu\",\"url\":\"\",\"title\":\"deneme\",\"icon\":\"icofont-tools-alt-2\",\"subList\":[],\"parent\":0},{\"id\":5,\"text\":\"Admin Panel\",\"url\":\"\",\"title\":\"deneme\",\"icon\":\"icofont-business-man\",\"subList\":[],\"parent\":0}]");
 
 /***/ }),
 
@@ -26358,12 +26372,12 @@ module.exports = JSON.parse("[{\"id\":1,\"text\":\"Anasayfa\",\"url\":\"#\",\"ti
 
 /***/ 0:
 /*!******************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/css/tailwind.css ***!
+  !*** multi ./resources/js/admin.js ./resources/sass/app.scss ./resources/css/tailwind.css ***!
   \******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\Ceyhun.Yucel\Desktop\firstcode\resources\js\app.js */"./resources/js/app.js");
+__webpack_require__(/*! C:\Users\Ceyhun.Yucel\Desktop\firstcode\resources\js\admin.js */"./resources/js/app.js");
 __webpack_require__(/*! C:\Users\Ceyhun.Yucel\Desktop\firstcode\resources\sass\app.scss */"./resources/sass/app.scss");
 module.exports = __webpack_require__(/*! C:\Users\Ceyhun.Yucel\Desktop\firstcode\resources\css\tailwind.css */"./resources/css/tailwind.css");
 

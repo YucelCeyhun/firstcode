@@ -1,16 +1,11 @@
 @extends('layouts.app')
 @section('content')
-    <div class="h-8 box-white bg-gray-100 px-3 text-xs text-gray-500 font-semibold flex"
-         style="z-index: 10;position: relative;" xmlns:svg="http://www.w3.org/1999/xhtml">
-        <span class="self-center">Anasayfa > Laravel > Laravelde Notfication Göndermek</span>
-    </div>
-    <div class="relative z-0">
-        <img src="{{asset('images/home-image.png')}}" class="object-cover object-left min-h-40">
+    <div class="relative z-0 join-discord">
         <div class="wrapper absolute z-50 bg-black w-full inset-0" style="opacity: 0.7"></div>
         <div class="request absolute w-full inset-0 flex items-center justify-center">
             <a href="#"
                class="border-2 border-white text-gray-100 font-bold px-16 py-4 rounded-full z-50 uppercase hover:border-indigo-500 hover:text-indigo-500"
-               style="background-color: rgba(0,0,0,0.3);">Discord Kanalımıza Katıl</a>
+               style="background-color: rgba(0,0,0,0.3);">Sizde İçerik Eklemek İster Misiniz ?</a>
         </div>
     </div>
     <div class="py-4 w-full font-exo flex flex-wrap lg:flex-no-wrap min-h-32 my-1 justify-center font-semibold">
@@ -22,7 +17,17 @@
                         <a href="#" title="Discord">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 84">
                             <defs>
-                                <svg:style>.discord-cls-1{fill:#4a5568;}.discord-cls-2{fill:#fff;}.discord-cls-3{fill:#7289da;}</svg:style>
+                                <style>.discord-cls-1 {
+                                        fill: #4a5568;
+                                    }
+
+                                    .discord-cls-2 {
+                                        fill: #fff;
+                                    }
+
+                                    .discord-cls-3 {
+                                        fill: #7289da;
+                                    }</style>
                             </defs>
                             <g id="Layer_2" data-name="Layer 2">
                                 <g id="Layer_1-2" data-name="Layer 1">
@@ -52,17 +57,17 @@
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                              viewBox="0 0 42 84">
                             <defs>
-                                <svg:style>.youtube-cls-1 {
-                                    fill: #4a5568;
+                                <style>.youtube-cls-1 {
+                                        fill: #4a5568;
                                     }
 
                                     .youtube-cls-2 {
-                                    fill: #fff;
+                                        fill: #fff;
                                     }
 
                                     .youtube-cls-3 {
-                                    fill: url(#linear-gradient);
-                                    }</svg:style>
+                                        fill: url(#linear-gradient);
+                                    }</style>
                                 <linearGradient id="linear-gradient" x1="21" y1="94.35" x2="21" y2="52.35"
                                                 gradientUnits="userSpaceOnUse">
                                     <stop offset="0" stop-color="#e53e3e"/>
@@ -100,91 +105,19 @@
     <div class="py-4 w-full font-exo flex flex-wrap lg:flex-no-wrap min-h-64 my-1 justify-center font-semibold">
         <div class="box-white py-4 px-5 m-3 min-h-64 w-full" id="last-contents">
             <h2 class="font-bold text-lg text-gray-700">Son İçerikler</h2>
-            <article class="flex items-center mt-5 min-h-10 flex-shrink-0">
-                <div class="image-column w-10 flex-shrink-0">
-                    <img src="{{asset('images/laravel.svg')}}" alt="laravel"/>
-                </div>
-                <div class="header-column w-full ml-3">
-                    <h5 class="text-md">
-                        Laravelde Pipiline Design Pattern Kullanımı
-                    </h5>
-                </div>
-            </article>
-            <article class="flex items-center mt-5 min-h-10">
-                <div class="image-column w-10 flex-shrink-0">
-                    <img src="{{asset('images/laravel.svg')}}" alt="laravel"/>
-                </div>
-                <div class="header-column w-full ml-3">
-                    <h5 class="text-md">
-                        Laravelde Pipiline Design Pattern Kullanımı,Pipiline İle Filtreleme Yapmak
-                    </h5>
-                </div>
-            </article>
-            <article class="flex items-center mt-5 min-h-10">
-                <div class="image-column w-10 flex-shrink-0">
-                    <img src="{{asset('images/laravel.svg')}}" alt="laravel"/>
-                </div>
-                <div class="header-column w-full">
-                    <h5 class="text-md ml-3">
-                        Laravelde Pipiline Design Pattern Kullanımı,Pipiline İle Filtreleme Yapmak
-                    </h5>
-                </div>
-            </article>
-            <article class="flex items-center mt-5 min-h-10">
-                <div class="image-column w-10 flex-shrink-0">
-                    <img src="{{asset('images/laravel.svg')}}" alt="laravel"/>
-                </div>
-                <div class="header-column w-full">
-                    <h5 class="text-md ml-3">
-                        Laravelde Pipiline Design Pattern Kullanımı,Pipiline İle Filtreleme Yapmak Laravelde Pipiline
-                    </h5>
-                </div>
-            </article>
-            <article class="flex items-center mt-5 min-h-10">
-                <div class="image-column w-10 flex-shrink-0">
-                    <img src="{{asset('images/laravel.svg')}}" alt="laravel"/>
-                </div>
-                <div class="header-column w-full">
-                    <h5 class="text-md ml-3">
-                        Laravelde Pipiline Design Pattern Kullanımı,Pipiline İle Filtreleme Yapmak Laravelde Pipiline
-
-                    </h5>
-                </div>
-            </article>
-            <article class="flex items-center mt-5 min-h-10">
-                <div class="image-column w-10 flex-shrink-0">
-                    <img src="{{asset('images/laravel.svg')}}" alt="laravel"/>
-                </div>
-                <div class="header-column w-full">
-                    <h5 class="text-md ml-3">
-                        Laravelde Pipiline Design Pattern Kullanımı,Pipiline İle Filtreleme Yapmak Laravelde Pipiline
-
-                    </h5>
-                </div>
-            </article>
-            <article class="flex items-center mt-5 min-h-10">
-                <div class="image-column w-10 flex-shrink-0">
-                    <img src="{{asset('images/laravel.svg')}}" alt="laravel"/>
-                </div>
-                <div class="header-column w-full">
-                    <h5 class="text-md ml-3">
-                        Laravelde Pipiline Design Pattern Kullanımı,Pipiline İle Filtreleme Yapmak Laravelde Pipiline
-
-                    </h5>
-                </div>
-            </article>
-            <article class="flex items-center mt-5 min-h-10">
-                <div class="image-column w-10 flex-shrink-0">
-                    <img src="{{asset('images/laravel.svg')}}" alt="laravel"/>
-                </div>
-                <div class="header-column w-full">
-                    <h5 class="text-md ml-3">
-                        Laravelde Pipiline Design Pattern Kullanımı,Pipiline İle Filtreleme Yapmak Laravelde Pipiline
-
-                    </h5>
-                </div>
-            </article>
-
+            @foreach($contents as $content)
+                <article class="flex items-center mt-5 min-h-10 flex-shrink-0">
+                    <div class="image-column w-10 flex-shrink-0">
+                        <img src="{{$content->category->icon}}" alt="{{$content->category->name}}"/>
+                    </div>
+                    <div class="header-column w-full ml-3 text-md">
+                        <h5 class="text-gray-500">{{$content->category->name}}</h5>
+                        <h5>
+                            <a href="{{route('main.content.show',$content->slug)}}">{{$content->title}}</a>
+                        </h5>
+                    </div>
+                </article>
+            @endforeach
         </div>
         <div class="box-white p-4 m-3 min-h-64 w-full" id="last-commits">
             <h2 class="font-bold text-lg text-gray-700">Son Yorumlar</h2>

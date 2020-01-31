@@ -10,25 +10,17 @@
             {
                 "id": 6,
                 "text": "Description",
-                "url": "asd",
+                "url": "/description/",
                 "title": "deneme",
                 "route": "description",
                 "parent": 1
             },
             {
                 "id": 7,
-                "text": "Default Title",
-                "url": "asd",
-                "title": "deneme",
-                "route": "#",
-                "parent": 1
-            },
-            {
-                "id": 8,
-                "text": "Footer Text",
-                "url": "#",
-                "title": "deneme",
-                "route": "#",
+                "text": "Category",
+                "url": "/category/",
+                "title": "Anasayfa kategorileri",
+                "route": "category",
                 "parent": 1
             }
         ],

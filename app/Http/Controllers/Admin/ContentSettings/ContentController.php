@@ -2,9 +2,13 @@
 
 namespace App\Http\Controllers\Admin\ContentSettings;
 
+use App\Category;
 use App\Content;
+use App\Helper\Facade\General;
 use App\Http\Controllers\Controller;
+use App\Tag;
 use Illuminate\Http\Request;
+use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 
 class ContentController extends Controller
@@ -26,28 +30,33 @@ class ContentController extends Controller
      */
     public function create()
     {
-        return view('admin.content-settings.content.create');
+        $categories = Category::with('contents')->where('content_addable', true)->get();
+        return view('admin.content-settings.content.create', compact('categories'));
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
+        $slug = Str::slug($request->title);
+        $request->request->add(['slug' => $slug]);
         $validatedArray = $this->formValidate();
-        $validatedArray['body'] = nl2br($validatedArray['body']);
-        $slug = Str::slug($validatedArray['title']);
-        $others = ['slug' => $slug];
-        Content::create(array_merge($validatedArray,$others));
+        unset($validatedArray['tag']);
+        $body = $validatedArray['body'];
+        $inputs = General::inputFilter($validatedArray);
+        $inputs['body'] = $body;
+        $content = Content::create($inputs);
+        $this->tagsExtract($request->tag,$content);
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Content  $content
+     * @param \App\Content $content
      * @return \Illuminate\Http\Response
      */
     public function show(Content $content)
@@ -58,7 +67,7 @@ class ContentController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Content  $content
+     * @param \App\Content $content
      * @return \Illuminate\Http\Response
      */
     public function edit(Content $content)
@@ -69,8 +78,8 @@ class ContentController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Content  $content
+     * @param \Illuminate\Http\Request $request
+     * @param \App\Content $content
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Content $content)
@@ -81,7 +90,7 @@ class ContentController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Content  $content
+     * @param \App\Content $content
      * @return \Illuminate\Http\Response
      */
     public function destroy(Content $content)
@@ -89,11 +98,45 @@ class ContentController extends Controller
         //
     }
 
-    private function formValidate(){
+    private function formValidate()
+    {
+
         return request()->validate([
             'body' => 'required|min:3',
-            'title' => 'required|min:3',
+            'title' => 'required|min:3|unique:contents',
             'description' => 'required|min:3',
+            'category_id' => 'required|numeric',
+            'tag' => 'string',
+            'slug' => 'required|unique:contents'
         ]);
+    }
+
+    private function tagsExtract($tags,Content $content)
+    {
+        $tags = explode(',',$tags);
+        $tags = General::inputFilter($tags);
+        $tagCollections = Collection::wrap($tags);
+        $createTags = [];
+        $attachTags = [];
+
+        $tagCollections->each(function ($tag) use(&$createTags,&$attachTags) {
+            $tag = ucwords($tag);
+            $tagQuery = Tag::whereName($tag);
+            if(!$tagQuery->exists())
+                array_push($createTags,$tag);
+            else {
+                array_push($attachTags,$tagQuery->first()->id);
+            }
+        });
+        $content->tags()->attach($attachTags);
+
+        foreach ($createTags as $tag){
+            $slug = Str::slug($tag);
+            $content->tags()->create([
+                'name' => $tag,
+                'slug' => $slug
+            ]);
+        }
+
     }
 }

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Content;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,6 +24,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $contents = Content::with('category')->limit(10);
+        return $contents;
+        //return view('home');
     }
 }
