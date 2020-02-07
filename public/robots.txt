@@ -1,2 +1,4 @@
 User-agent: *
-Disallow:
+Disallow: /fc-admin/
+
+Sitemap: https://www.firstcode.site/sitemap.xml

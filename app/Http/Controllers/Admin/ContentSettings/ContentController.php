@@ -10,6 +10,7 @@ use App\Tag;
 use Illuminate\Http\Request;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
+use Illuminate\Validation\Rule;
 
 class ContentController extends Controller
 {
@@ -30,7 +31,10 @@ class ContentController extends Controller
      */
     public function create()
     {
-        $categories = Category::with('contents')->where('content_addable', true)->get();
+        $categories = Category::with('contents')
+            ->where('content_addable', true)
+            ->get();
+
         return view('admin.content-settings.content.create', compact('categories'));
     }
 
@@ -51,6 +55,8 @@ class ContentController extends Controller
         $inputs['body'] = $body;
         $content = Content::create($inputs);
         $this->tagsExtract($request->tag,$content);
+
+        return back();
     }
 
     /**
@@ -72,7 +78,11 @@ class ContentController extends Controller
      */
     public function edit(Content $content)
     {
-        //
+        $categories = Category::with('contents')
+            ->where('content_addable', true)
+            ->get();
+
+        return view('admin.content-settings.content.edit',compact('content','categories'));
     }
 
     /**
@@ -84,7 +94,18 @@ class ContentController extends Controller
      */
     public function update(Request $request, Content $content)
     {
-        //
+        $slug = Str::slug($request->title);
+        $request->request->add(['slug' => $slug]);
+        $validatedArray = $this->formValidateUpdate($content);
+        unset($validatedArray['tag']);
+        $body = $validatedArray['body'];
+        $inputs = General::inputFilter($validatedArray);
+        $inputs['body'] = $body;
+        $content->update($inputs);
+        $this->detachTagFromContent($content);
+        $this->tagsExtract($request->tag,$content);
+
+        return redirect()->route("fc-admin.index");
     }
 
     /**
@@ -108,6 +129,17 @@ class ContentController extends Controller
             'category_id' => 'required|numeric',
             'tag' => 'string',
             'slug' => 'required|unique:contents'
+        ]);
+    }
+
+    private function formValidateUpdate($content){
+        return request()->validate([
+            'body' => 'required|min:3',
+            'title' => ['required','min:3',Rule::unique('contents','title')->ignore($content->id)],
+            'description' => 'required|min:3',
+            'category_id' => 'required|numeric',
+            'tag' => 'string',
+            'slug' => ['required',Rule::unique('contents','slug')->ignore($content->id)]
         ]);
     }
 
@@ -139,4 +171,13 @@ class ContentController extends Controller
         }
 
     }
+
+    private  function detachTagFromContent(Content $content){
+        $tagIds = $content->tags->map(function ($tag){
+            return $tag->id;
+        });
+
+        $content->tags()->detach($tagIds);
+    }
+
 }

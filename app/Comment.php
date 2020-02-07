@@ -21,6 +21,14 @@ class Comment extends Model
         return $this->belongsTo(Content::class, 'content_slug', 'slug');
     }
 
+    public function contentWithCommentId(){
+        return $this->content->slug.'/#comment-'.$this->id;
+    }
+
+    public function commentId(){
+        return 'comment-'.$this->id;
+    }
+
     private function getDefaultAvatar()
     {
         return asset('images/default.png');

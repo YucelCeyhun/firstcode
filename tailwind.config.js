@@ -18,8 +18,11 @@ module.exports = {
             spacing: {
                 '80': '20rem',
                 '96': '24rem',
-                '112':'28rem',
-                '128': '32rem'
+                '112': '28rem',
+                '128': '32rem',
+                '192': '48rem',
+                '224': '56rem',
+                '256': '64rem'
             },
             fontSize: {
                 md: '0.92rem'

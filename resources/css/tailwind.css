@@ -7,6 +7,25 @@
     @apply text-gray-700 bg-white shadow
 }
 
+@screen lg {
+    .menu-list-item {
+        @apply py-8 px-2 relative
+    }
+
+    .nav-menu{
+        @apply flex relative text-left border-b-0
+    }
+
+}
+
+.nav-menu{
+    @apply justify-center font-bold text-gray-700 font-exo tracking-wider absolute bg-white text-center border-b-2 border-gray-200 hidden
+}
+
+.menu-list-item:hover {
+    @apply text-indigo-500
+}
+
 .menu-list{
     @apply border-b py-3 border-indigo-500 font-semibold
 }
@@ -68,5 +87,20 @@
     @apply text-gray-700 border-2 border-t-0 border-gray-400 py-2 px-1 bg-gray-100 outline-none w-full font-exo
 }
 
+.tag{
+    @apply bg-gray-700 px-3 py-2 text-white text-md mt-5;
+}
+
+.tag:hover{
+    @apply bg-indigo-500;
+}
+
+.join-us{
+    @apply border-2 border-white text-gray-100 font-bold px-16 py-4 rounded-full z-50 uppercase
+}
+
+.join-us:hover{
+    @apply border-indigo-500 text-indigo-500
+}
 
 @tailwind utilities;

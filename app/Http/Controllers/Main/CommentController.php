@@ -13,6 +13,7 @@ class CommentController extends Controller
     {
         $inputs = $this->formValidate($request);
         $content->comments()->create($inputs);
+        return back();
     }
 
     private function formValidate($request)
@@ -20,7 +21,7 @@ class CommentController extends Controller
         return General::inputFilter($request->validate([
             'name' => 'required|min:3',
             'email' => 'required|email:rfc,dns',
-            'comment' => 'required|min:3|max:1000'
+            'comment' => 'required|min:3|max:200'
         ]));
     }
 }

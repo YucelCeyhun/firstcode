@@ -13481,6 +13481,18 @@ highlight_js_lib_highlight__WEBPACK_IMPORTED_MODULE_0___default.a.registerLangua
 highlight_js_lib_highlight__WEBPACK_IMPORTED_MODULE_0___default.a.registerLanguage('sql', __webpack_require__(/*! highlight.js/lib/languages/sql */ "./node_modules/highlight.js/lib/languages/sql.js"));
 highlight_js_lib_highlight__WEBPACK_IMPORTED_MODULE_0___default.a.initHighlightingOnLoad();
 highlight_js_lib_highlight__WEBPACK_IMPORTED_MODULE_0___default.a.autoDetection();
+$(function () {
+  $(".mob").on('click', function (event) {
+    event.preventDefault();
+  });
+  var navMenu = $("#nav-menu");
+  $("#menu-button").click(function () {
+    navMenu.toggleClass("hidden");
+  });
+  $(".owner-sub-list").children("a").on("click", function () {
+    $(this).next("ul").toggleClass("hidden");
+  });
+});
 
 /***/ }),
 

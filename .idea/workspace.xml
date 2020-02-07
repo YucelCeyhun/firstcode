@@ -127,7 +127,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin/content" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin/home-settings/category" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -139,15 +139,18 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Ceyhun.Yucel\Desktop\firstcode\resources\views\admin\content" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Ceyhun.Yucel\Desktop\firstcode\resources\views\admin\home-settings\category" />
-      <recent name="C:\Users\Ceyhun.Yucel\Desktop\firstcode\resources\views\admin\home-settings" />
-      <recent name="C:\Users\Ceyhun.Yucel\Desktop\firstcode\public\images" />
-      <recent name="C:\Users\Ceyhun.Yucel\Desktop\firstcode\resources\views\admin\home-settings\description" />
+      <recent name="C:\Users\Ceyhun.Yucel\Desktop\firstcode\app\Http\Controllers" />
+      <recent name="C:\Users\Ceyhun.Yucel\Desktop\firstcode\resources\views" />
       <recent name="C:\Users\Ceyhun.Yucel\Desktop\firstcode\resources\views\admin" />
+      <recent name="C:\Users\Ceyhun.Yucel\Desktop\firstcode\app\Http\Controllers\Admin" />
+      <recent name="C:\Users\Ceyhun.Yucel\Desktop\firstcode\resources\views\admin\home-settings\category" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ceyhun.Yucel\Desktop\firstcode\resources\views\admin\home-settings\category" />
+      <recent name="C:\Users\Ceyhun.Yucel\Desktop\firstcode\resources\views\admin\content-settings\content" />
+      <recent name="C:\Users\Ceyhun.Yucel\Desktop\firstcode\resources\views\main" />
+      <recent name="C:\Users\Ceyhun.Yucel\Desktop\firstcode\resources\views\admin\content" />
     </key>
   </component>
   <component name="RunManager">
@@ -270,7 +273,47 @@
       <workItem from="1580394602886" duration="193000" />
       <workItem from="1580417496862" duration="2706000" />
       <workItem from="1580461739992" duration="7810000" />
-      <workItem from="1580484702191" duration="6975000" />
+      <workItem from="1580484702191" duration="7658000" />
+      <workItem from="1580497850060" duration="3705000" />
+      <workItem from="1580546396085" duration="1508000" />
+      <workItem from="1580555707805" duration="65000" />
+      <workItem from="1580564398733" duration="2522000" />
+      <workItem from="1580567981017" duration="23139000" />
+      <workItem from="1580631783162" duration="2112000" />
+      <workItem from="1580635757922" duration="2632000" />
+      <workItem from="1580648345645" duration="6038000" />
+      <workItem from="1580665065056" duration="1174000" />
+      <workItem from="1580673992100" duration="1213000" />
+      <workItem from="1580683230084" duration="53000" />
+      <workItem from="1580719607901" duration="242000" />
+      <workItem from="1580721410166" duration="3372000" />
+      <workItem from="1580730440034" duration="3353000" />
+      <workItem from="1580739477770" duration="3088000" />
+      <workItem from="1580746765999" duration="5854000" />
+      <workItem from="1580753003097" duration="287000" />
+      <workItem from="1580756509294" duration="427000" />
+      <workItem from="1580762974153" duration="3156000" />
+      <workItem from="1580805122376" duration="4643000" />
+      <workItem from="1580809840463" duration="789000" />
+      <workItem from="1580816228414" duration="5332000" />
+      <workItem from="1580823100578" duration="536000" />
+      <workItem from="1580836826526" duration="362000" />
+      <workItem from="1580844241886" duration="3073000" />
+      <workItem from="1580895154540" duration="286000" />
+      <workItem from="1580900700579" duration="2520000" />
+      <workItem from="1580904710061" duration="4718000" />
+      <workItem from="1580912821592" duration="1559000" />
+      <workItem from="1580924855199" duration="4084000" />
+      <workItem from="1580929461285" duration="4806000" />
+      <workItem from="1580934516578" duration="253000" />
+      <workItem from="1580934857457" duration="6766000" />
+      <workItem from="1581004700313" duration="2656000" />
+      <workItem from="1581012033314" duration="234000" />
+      <workItem from="1581014081850" duration="302000" />
+      <workItem from="1581022057582" duration="4113000" />
+      <workItem from="1581060936943" duration="3728000" />
+      <workItem from="1581066264870" duration="848000" />
+      <workItem from="1581073146400" duration="446000" />
     </task>
     <servers />
   </component>
@@ -278,22 +321,30 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="701" y="311" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578392986003">
+    <state x="701" y="311" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580651013731">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="701" y="311" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1578392986003" />
-    <state x="640" y="257" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1579940559047">
+    <state x="701" y="311" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1580651013731" />
+    <state x="640" y="257" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1580809806411">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="640" y="257" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579940559047" />
-    <state x="690" y="276" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1580490891026">
+    <state x="640" y="257" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580809806411" />
+    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580650857924">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="276" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580490891026" />
-    <state x="683" y="319" key="NewPhpClassDialog" timestamp="1579770134623">
+    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580650857924" />
+    <state x="690" y="276" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1581025512684">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="683" y="319" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579770134623" />
+    <state x="690" y="276" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581025512684" />
+    <state x="683" y="319" key="NewPhpClassDialog" timestamp="1580565172983">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="683" y="319" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580565172983" />
+    <state x="794" y="440" key="NewPhpFileDialog" timestamp="1580844321392">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="794" y="440" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580844321392" />
     <state x="461" y="163" key="SettingsEditor" timestamp="1578387720785">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -306,13 +357,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="636" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578587850234" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1579972664559">
+    <state x="747" y="210" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1581061121455">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1579972664559" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1580493316976">
+    <state x="747" y="210" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1581061121455" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1580844888813">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580493316976" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580844888813" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1581073553888">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1581073553888" />
   </component>
 </project>

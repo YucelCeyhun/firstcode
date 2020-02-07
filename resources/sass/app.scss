@@ -41,18 +41,31 @@ body {
     }
 }
 
-//.header-sub-menu:hover:nth-child(2){
-//    display: block;
-//}
+@media screen and (min-width:1024px) {
+    .owner-sub-list > :nth-child(3) {
+        display: none;
+    }
 
+    .owner-sub-list:hover > :nth-child(3) {
+        display: block;
+        animation: fadeInBottom .3s;
+    }
 
-.header-list-item > :nth-child(2) {
-    display: none;
+    .mob {
+        display:none;
+    }
 }
 
-.header-list-item:hover > :nth-child(2) {
-    display: block;
-    animation: fadeInBottom 0.3s;
+@media screen and (max-width: 1024px){
+    #nav-menu {
+        top: 100%;
+        left: 0;
+        min-width: 100%;
+    }
+
+    .desk {
+        display:none;
+    }
 }
 
 .search:focus + button {
@@ -62,17 +75,20 @@ body {
 }
 
 .icon-wrapper {
-    transition: transform 0.3s ease-in-out;;
+    transition: transform .3s ease-in-out;;
 
     &:hover {
         transform: translateY(-50%);
     }
 }
 
-.join-discord {
-    background-image: url("../../public/images/home-image.png");
+.join-us-parent {
+    //background-image: url("../../public/images/home-image.png");
     background-repeat: repeat;
     min-height: 22.5rem;
+    & .wrapper{
+        opacity: .7;
+    }
 }
 
 .editor-box {
@@ -92,24 +108,42 @@ body {
 }
 
 .text-indent{
-    text-indent: 2rem
+    text-indent: 1rem
 }
 
-//.header-list-item {
-//    &::after {
-//        content: "";
-//        display: none;
-//        position: absolute;
-//        width: 100%;
-//        bottom: 0;
-//        left: 0;
-//        height: 0.25rem;
-//        background-color: #4a5568;
-//
-//    }
-//
-//    &:hover::after{
-//        display: block;
-//    }
-//}
+.pagination-wrapper{
+    & nav .pagination{
+        display: flex;
+        & .pagination-items{
+           padding: .5rem;
+        }
+
+        & {
+            .active-item {
+                font-weight: 900;
+            }
+
+            .direction {
+                font-weight: 900;
+            }
+
+            .disabled {
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.menu-list-item{
+    transition: color .3s ease;
+}
+
+.tag{
+    transition: background-color .3s ease;
+}
+
+.join-us{
+    background-color: rgba(0,0,0,.3);
+    transition: all .3s ease;
+}
 

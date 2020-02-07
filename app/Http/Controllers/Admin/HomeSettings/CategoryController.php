@@ -49,17 +49,17 @@ class CategoryController extends Controller
         if($request->hasFile('icon')){
             $file = $request->file('icon');
             $fileName = strtolower($file->getClientOriginalName());
-            $filePath = public_path("/images/category/{$fileName}");
-            $assetUrl = asset("/images/category/{$fileName}");
+            $imagePath = "/images/category/{$fileName}";
+            $imageFullPath = public_path($imagePath);
 
             $img = Image::make($request->file('icon'));
             $img->resize(50,null,function($constraint){
                 $constraint->aspectRatio();
             });
 
-            $img->save($filePath);
+            $img->save($imageFullPath);
             $category->update([
-               'icon' => $assetUrl
+               'icon' => $imagePath
             ]);
         }
     }
@@ -83,7 +83,7 @@ class CategoryController extends Controller
      */
     public function edit(Category $category)
     {
-        //
+//        return view('admin.home-settings.category.edit',compact('category'));
     }
 
     /**

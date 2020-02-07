@@ -9,7 +9,7 @@ class General
     public function inputFilter(Array $inputs)
     {
         return array_map(function ($input) {
-            return trim(htmlspecialchars($input));
+            return trim(strip_tags($input));
         }, $inputs);
     }
 
