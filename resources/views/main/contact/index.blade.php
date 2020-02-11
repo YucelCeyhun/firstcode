@@ -1,4 +1,6 @@
-@extends('layouts.app',compact('breadcrumbList'))
+@extends('layouts.app',['title' => 'İletişim','breadcrumbList' => $breadcrumbList])
+@section('description','Firstcode iletişim,bize ulaş,Firstcode içerik eklemek için ulaş')
+@section('title','İletişim')
 @section('content')
     <div class="py-4 lg:px-0 px-4 w-full font-exo flex lg:flex-row lg:flex-no-wrap flex-col-reverse justify-center font-semibold">
         <div class="content-wrapper lg:m-3 lg:w-3/4 w-full">

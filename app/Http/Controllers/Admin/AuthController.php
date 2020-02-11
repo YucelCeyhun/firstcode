@@ -19,7 +19,7 @@ class AuthController extends Controller
     {
 
         $this->middleware('guest')->only('showLoginForm');
-        //$this->middleware('throttle:3,1')->only(['showLoginForm','login']);
+        $this->middleware('throttle:3,1')->only('login');
     }
 
     public function username(){
@@ -29,7 +29,7 @@ class AuthController extends Controller
 
     public function showLoginForm()
     {
-        return view('auth.login');
+        return view('admin.auth.login');
     }
 
     protected function attemptLogin(Request $request)

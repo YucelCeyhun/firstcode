@@ -14,6 +14,22 @@ hljs.initHighlightingOnLoad();
 
 hljs.autoDetection();
 
+$( window ).on('load',() => {
+    var progress = $('.progress');
+    var width = progress.width();
+    progress.removeClass('progressing');
+
+    progress.width(width).animate({
+        width:'100%'
+    },300,() => {
+        progress.animate({
+           opacity:0
+        },300,() => {
+            progress.parent().addClass('hidden');
+        });
+    })
+});
+
 $(function () {
 
     $(".mob").on('click', (event) => {
@@ -29,4 +45,8 @@ $(function () {
     $(".owner-sub-list").children("a").on("click", function () {
         $(this).next("ul").toggleClass("hidden");
     });
+
 });
+
+
+

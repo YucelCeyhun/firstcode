@@ -127,7 +127,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin/home-settings/category" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/main/content" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -147,6 +147,7 @@
       <recent name="C:\Users\Ceyhun.Yucel\Desktop\firstcode\resources\views\admin\home-settings\category" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ceyhun.Yucel\Desktop\firstcode\resources\views\main\content" />
       <recent name="C:\Users\Ceyhun.Yucel\Desktop\firstcode\resources\views\admin\home-settings\category" />
       <recent name="C:\Users\Ceyhun.Yucel\Desktop\firstcode\resources\views\admin\content-settings\content" />
       <recent name="C:\Users\Ceyhun.Yucel\Desktop\firstcode\resources\views\main" />
@@ -314,6 +315,19 @@
       <workItem from="1581060936943" duration="3728000" />
       <workItem from="1581066264870" duration="848000" />
       <workItem from="1581073146400" duration="446000" />
+      <workItem from="1581090136703" duration="3148000" />
+      <workItem from="1581099357249" duration="5000" />
+      <workItem from="1581238623094" duration="1812000" />
+      <workItem from="1581261567706" duration="3745000" />
+      <workItem from="1581273957543" duration="6000" />
+      <workItem from="1581274176957" duration="477000" />
+      <workItem from="1581274978609" duration="422000" />
+      <workItem from="1581325948912" duration="12697000" />
+      <workItem from="1581346241685" duration="460000" />
+      <workItem from="1581346765737" duration="10006000" />
+      <workItem from="1581359236519" duration="9033000" />
+      <workItem from="1581370187337" duration="435000" />
+      <workItem from="1581409208592" duration="18306000" />
     </task>
     <servers />
   </component>
@@ -333,10 +347,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580650857924" />
-    <state x="690" y="276" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1581025512684">
+    <state x="690" y="276" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1581413602411">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="276" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581025512684" />
+    <state x="690" y="276" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581413602411" />
     <state x="683" y="319" key="NewPhpClassDialog" timestamp="1580565172983">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -365,9 +379,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580844888813" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1581073553888">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1581428896835">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1581073553888" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1581428896835" />
   </component>
 </project>

@@ -83,7 +83,7 @@ body {
 }
 
 .join-us-parent {
-    //background-image: url("../../public/images/home-image.png");
+    background-image: url("../../public/images/home-image.png");
     background-repeat: repeat;
     min-height: 22.5rem;
     & .wrapper{
@@ -146,4 +146,27 @@ body {
     background-color: rgba(0,0,0,.3);
     transition: all .3s ease;
 }
+
+.progress-bar{
+    height:0.1rem;
+    & > .progress{
+        height: inherit;
+    }
+}
+
+.progressing{
+    animation: progress 2s linear;
+}
+
+@keyframes progress {
+    from{
+        width: 0;
+    }
+
+    to{
+        width: 100%;
+    }
+}
+
+
 

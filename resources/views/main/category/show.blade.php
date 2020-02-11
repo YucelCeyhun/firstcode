@@ -1,4 +1,6 @@
-@extends('layouts.app',compact('breadcrumbList'))
+@extends('layouts.app',['title' => "$category->name Dersleri",'breadcrumbList' => $breadcrumbList])
+@section('description',$category->description)
+@section('title',"$category->name Dersleri")
 @section('content')
     <div class="py-4 w-full font-exo flex flex-wrap lg:flex-no-wrap min-h-32 justify-center font-semibold">
         @include('main.fixboxTop')
