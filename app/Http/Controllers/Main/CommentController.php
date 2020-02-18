@@ -13,6 +13,9 @@ class CommentController extends Controller
     public function store(Request $request, Content $content)
     {
         if (Auth::check()) {
+            if(empty($request->comment))
+                return back();
+
             $inputs = [
                 'name' => Auth::user()->name,
                 'email' => Auth::user()->email,
@@ -24,9 +27,18 @@ class CommentController extends Controller
             return back();
         }
 
-        $inputs = $this->formValidate($request);
-        $content->comments()->create($inputs);
-        return back();
+        $gresponse = General::grecaptcha($request->input('g-recaptcha-response'));
+
+        if($gresponse) {
+            $inputs = $this->formValidate($request);
+            $content->comments()->create($inputs);
+            return back();
+        }
+
+        return back()->withErrors([
+            'recaptcha' => 'Güvelik doğrulama geçersiz'
+        ]);
+
     }
 
     private function formValidate($request)

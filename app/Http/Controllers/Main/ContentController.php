@@ -45,7 +45,6 @@ class ContentController extends Controller
         );
 
         $similarContents = $this->similarContents($content);
-
         return view('main.content.show', compact('content', 'breadcrumbList', 'similarContents'));
 
     }
@@ -57,21 +56,20 @@ class ContentController extends Controller
 
         foreach ($tagIds as $tagId) {
             $contents = Tag::find($tagId)
-                ->contents()
-                ->where('slug', '<>', $content->slug)
-                ->with('tags')
-                ->get();
+                            ->contents()
+                            ->where('slug', '<>', $content->slug)
+                            ->with('tags')
+                            ->get();
 
-            $similarContents = $similarContents->merge($contents);
+            $similarContents = $similarContents->merge($contents)->unique('id');
         }
 
-        if ($similarContents->count() <= self::RANDOM_CONTENT_COUNT)
-            return $similarContents
-                ->unique('id')
-                ->all();
+        if ($similarContents->count() <= self::RANDOM_CONTENT_COUNT) {
+            return $similarContents->all();
+        }
+
 
         return $similarContents
-            ->unique('id')
             ->random(self::RANDOM_CONTENT_COUNT)
             ->all();
     }

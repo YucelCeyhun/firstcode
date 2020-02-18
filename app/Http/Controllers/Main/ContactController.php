@@ -18,12 +18,20 @@ class ContactController extends Controller
 
     public function store(Request $request)
     {
-        $formValidate = General::inputFilter($this->formValidate($request));
-        $mail = new ContactMail($formValidate);
+        $gresponse = General::grecaptcha($request->input('g-recaptcha-response'));
 
-        Mail::to('codeceyhun@gmail.com')->send($mail);
+        if($gresponse) {
+            $formValidate = General::inputFilter($this->formValidate($request));
+            $mail = new ContactMail($formValidate);
 
-        return back();
+            Mail::to(env('MAIL_TO'))->send($mail);
+
+            return back();
+        }
+
+        return back()->withErrors([
+            'recaptcha' => 'Güvelik doğrulama geçersiz'
+        ]);
     }
 
     private function formValidate(Request $request)

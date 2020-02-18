@@ -106,10 +106,13 @@ class CategoryController extends Controller
         if (empty($inputs['slug']))
             $inputs['slug'] = 'lesson-' . Str::slug($inputs['name']);
 
-        $category = $category->update($inputs);
+        unset($inputs['icon']);
+        $category->update($inputs);
 
         if ($request->hasFile('icon')) {
+
             if(!empty($category->icon)){
+                echo $category->icon;
                 File::delete(public_path($category->icon));
             }
 

@@ -12,7 +12,7 @@
             @foreach($contents as $content)
                 <article class="flex items-center mt-5 min-h-10 flex-shrink-0">
                     <div class="image-column w-10 flex-shrink-0">
-                        <img src="{{$content->category->icon}}" alt="{{$content->category->name}}"/>
+                        <img src="{{$content->category->icon}}" alt="{{$content->category->name}} Kategori Iconu"/>
                     </div>
                     <div class="header-column w-full ml-3 text-md">
                         <h3>

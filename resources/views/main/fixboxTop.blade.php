@@ -3,7 +3,7 @@
     <div class="mt-5">
         <div class="icon-discord inline-block" style="width:42px;height: 42px;overflow: hidden">
             <div class="icon-wrapper" style="width: 42px;">
-                <a href="https://discord.gg/QKhmnZ" title="Firstcode Discord">
+                <a href="https://discord.gg/hAymhnR"  rel="nofollow" title="Firstcode Discord">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 84">
                         <defs>
                             <style>.discord-cls-1 {

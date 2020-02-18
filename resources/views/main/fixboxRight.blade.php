@@ -4,7 +4,17 @@
             <input type="text" class="form-input inline-block h-10 border-r-0 search" name="search">
             <button
                 class="inline-block bg-gray-100 px-4 border-t-2 border-b-2 border-r-2 text-gray-700 font-semibold border-gray-400 h-10 focus:outline-none"
-                title="Arama"><i class="icofont-ui-search text-xl"></i></button>
+                title="Arama"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 22" width="20" height="22">
+                    <defs>
+                        <style>.a{fill:#4a5568;}.b{fill:#fff;}</style>
+                    </defs>
+                    <title>Ara</title>
+                    <polygon class="a" points="15.88 22 20 18.93 12.99 11.19 10.17 13.29 15.88 22"/>
+                    <ellipse class="b" cx="8.15" cy="8.15" rx="6.47" ry="6.47"/>
+                    <path class="a"
+                          d="M8.15,3.36A4.79,4.79,0,1,1,3.36,8.15,4.8,4.8,0,0,1,8.15,3.36M8.15,0A8.15,8.15,0,1,0,16.3,8.15,8.15,8.15,0,0,0,8.15,0Z"/>
+                </svg>
+            </button>
         </div>
     </form>
 </div>
@@ -13,7 +23,7 @@
     <div class="mt-5">
         <div class="icon-discord inline-block" style="width:42px;height: 42px;overflow: hidden">
             <div class="icon-wrapper" style="width: 42px;">
-                <a href="https://discord.gg/QKhmnZ" title="Firstcode Discord">
+                <a href="https://discord.gg/hAymhnR" rel="nofollow" title="Firstcode Discord">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 84">
                         <defs>
                             <style>.discord-cls-1 {

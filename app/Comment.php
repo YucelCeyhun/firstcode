@@ -31,6 +31,6 @@ class Comment extends Model
 
     private function getDefaultAvatar()
     {
-        return asset('images/default.png');
+        return asset('images/default.png',true);
     }
 }

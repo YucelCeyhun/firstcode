@@ -23,8 +23,8 @@ class SitemapController extends Controller
         $xml->addAttribute('xmlns','http://www.sitemaps.org/schemas/sitemap/0.9');
         foreach ($contents as $content){
             $url = $xml->addChild('url');
-            $url->addChild('loc',route('main.content.show',$content->slug));
-            $url->addChild('lastmod',$content->updated_at->isoFormat('YYYY MM DD'));
+            $url->addChild('loc',secure_url(route('main.content.show',$content->slug,false)));
+            $url->addChild('lastmod',$content->updated_at->isoFormat('YYYY-MM-DD'));
             $url->addChild('changefreq','always');
         }
 

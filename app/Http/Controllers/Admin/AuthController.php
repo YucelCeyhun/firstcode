@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Helper\Facade\General;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
@@ -38,6 +39,36 @@ class AuthController extends Controller
             $this->credentials($request), false
         );
     }
+
+    public function login(Request $request)
+    {
+        $gresponse = General::grecaptcha($request->input('g-recaptcha-response'));
+
+        if($gresponse) {
+            $this->validateLogin($request);
+
+            if (method_exists($this, 'hasTooManyLoginAttempts') &&
+                $this->hasTooManyLoginAttempts($request)) {
+                $this->fireLockoutEvent($request);
+
+                return $this->sendLockoutResponse($request);
+            }
+
+            if ($this->attemptLogin($request)) {
+                return $this->sendLoginResponse($request);
+            }
+
+            $this->incrementLoginAttempts($request);
+
+            return $this->sendFailedLoginResponse($request);
+
+        }
+
+        return back()->withErrors([
+            'recaptcha' => 'Güvelik doğrulama geçersiz'
+        ]);
+    }
+
 
     public function redirectPath()
     {

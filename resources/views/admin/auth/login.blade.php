@@ -9,6 +9,7 @@
     <title>Admin Login - Firstcode</title>
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <link rel="stylesheet" href="{{asset('css/tailwind.css')}}">
+    @include('main.grecaptcha')
 </head>
 <body class="h-full bg-gray-200">
 <div class="form-wrapper flex justify-center min-h-full items-center">
@@ -23,6 +24,7 @@
                 <label class="form-label my-1 w-full">Şifre</label>
                 <input type="password" name="password" class="form-input"/>
             </div>
+            <div id="g-recaptcha" class="my-6"></div>
             <input type="submit" value="Giriş" class="btn float-right"/>
         </form>
     </div>

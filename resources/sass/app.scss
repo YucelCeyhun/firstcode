@@ -72,6 +72,9 @@ body {
     border-color: #667eea;
     color: #667eea;
     background-color: #FFFFFF;
+    &  > svg > .a {
+        fill: #667eea;
+    }
 }
 
 .icon-wrapper {

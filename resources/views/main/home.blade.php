@@ -4,7 +4,7 @@
     <div class="relative z-0 join-us-parent">
         <div class="wrapper absolute z-50 bg-black w-full inset-0"></div>
         <div class="request absolute w-full inset-0 flex items-center justify-center">
-            <a href="{{route('main.contact.index')}}" class="join-us">Sizde İçerik Eklemek İster Misiniz ?</a>
+            <a href="{{route('main.contact.index')}}" class="join-us text-center">Sizde İçerik Eklemek İster Misiniz ?</a>
         </div>
     </div>
     <div class="py-4 w-full font-exo flex flex-wrap lg:flex-no-wrap min-h-32 justify-center font-semibold">
@@ -16,7 +16,7 @@
             @foreach($contents as $content)
                 <article class="flex items-center mt-5 min-h-10 flex-shrink-0">
                     <div class="image-column w-10 flex-shrink-0">
-                        <img src="{{$content->category->icon}}" alt="{{$content->category->name}}"/>
+                        <img src="{{$content->category->icon}}" alt="{{$content->category->name}} Kategori Iconu"/>
                     </div>
                     <div class="header-column w-full ml-3 text-md">
                         <h5 class="text-gray-500"><a href="{{route('main.category.show',$content->category->slug)}}">{{$content->category->name}}</a></h5>

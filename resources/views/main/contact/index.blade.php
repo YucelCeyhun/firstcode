@@ -1,6 +1,9 @@
 @extends('layouts.app',['title' => 'İletişim','breadcrumbList' => $breadcrumbList])
 @section('description','Firstcode iletişim,bize ulaş,Firstcode içerik eklemek için ulaş')
 @section('title','İletişim')
+@section('grecaptcha')
+    @include('main.grecaptcha')
+@endsection
 @section('content')
     <div class="py-4 lg:px-0 px-4 w-full font-exo flex lg:flex-row lg:flex-no-wrap flex-col-reverse justify-center font-semibold">
         <div class="content-wrapper lg:m-3 lg:w-3/4 w-full">
@@ -27,7 +30,8 @@
                                         <label class="form-label w-full mb-2">Talebiniz</label>
                                         <textarea class="form-input min-h-80" name="request"></textarea>
                                     </div>
-                                    <input type="submit" value="Oluştur" class="btn">
+                                    <div id="g-recaptcha" class="mt-4"></div>
+                                    <input type="submit" value="Oluştur" class="btn mt-4">
                                 </form>
                             </div>
                         </div>

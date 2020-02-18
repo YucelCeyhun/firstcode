@@ -10,7 +10,7 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
-      <executable />
+      <executable path="composer" />
     </execution>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -327,7 +327,52 @@
       <workItem from="1581346765737" duration="10006000" />
       <workItem from="1581359236519" duration="9033000" />
       <workItem from="1581370187337" duration="435000" />
-      <workItem from="1581409208592" duration="18306000" />
+      <workItem from="1581409208592" duration="19530000" />
+      <workItem from="1581439745695" duration="1900000" />
+      <workItem from="1581500084740" duration="6000" />
+      <workItem from="1581501469449" duration="1774000" />
+      <workItem from="1581503760070" duration="2292000" />
+      <workItem from="1581506753051" duration="3027000" />
+      <workItem from="1581510600589" duration="2000" />
+      <workItem from="1581510625326" duration="448000" />
+      <workItem from="1581514678992" duration="70000" />
+      <workItem from="1581514770590" duration="4900000" />
+      <workItem from="1581525113724" duration="1245000" />
+      <workItem from="1581529245728" duration="810000" />
+      <workItem from="1581530619488" duration="398000" />
+      <workItem from="1581531162975" duration="253000" />
+      <workItem from="1581531818491" duration="336000" />
+      <workItem from="1581532314506" duration="12157000" />
+      <workItem from="1581580773304" duration="3427000" />
+      <workItem from="1581586190365" duration="6067000" />
+      <workItem from="1581594677109" duration="746000" />
+      <workItem from="1581599372276" duration="862000" />
+      <workItem from="1581600542495" duration="329000" />
+      <workItem from="1581606861543" duration="1205000" />
+      <workItem from="1581611412832" duration="193000" />
+      <workItem from="1581611719352" duration="10000" />
+      <workItem from="1581612151312" duration="980000" />
+      <workItem from="1581674355999" duration="9622000" />
+      <workItem from="1581688898302" duration="1063000" />
+      <workItem from="1581690091599" duration="1681000" />
+      <workItem from="1581696835137" duration="1404000" />
+      <workItem from="1581698541034" duration="57000" />
+      <workItem from="1581698648275" duration="213000" />
+      <workItem from="1581760865759" duration="1228000" />
+      <workItem from="1581778271418" duration="97000" />
+      <workItem from="1581851381439" duration="262000" />
+      <workItem from="1581855620099" duration="942000" />
+      <workItem from="1581862181320" duration="137000" />
+      <workItem from="1581862475960" duration="19000" />
+      <workItem from="1581863937570" duration="163000" />
+      <workItem from="1581864215774" duration="287000" />
+      <workItem from="1581868087852" duration="130000" />
+      <workItem from="1581868441237" duration="74000" />
+      <workItem from="1581871478737" duration="598000" />
+      <workItem from="1581882322693" duration="848000" />
+      <workItem from="1581883636816" duration="176000" />
+      <workItem from="1581884179558" duration="155000" />
+      <workItem from="1581887369727" duration="448000" />
     </task>
     <servers />
   </component>
@@ -339,18 +384,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="701" y="311" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1580651013731" />
-    <state x="640" y="257" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1580809806411">
+    <state x="640" y="257" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1581599089169">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="640" y="257" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580809806411" />
+    <state x="640" y="257" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581599089169" />
     <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580650857924">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580650857924" />
-    <state x="690" y="276" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1581413602411">
+    <state x="690" y="276" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1581547372078">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="276" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581413602411" />
+    <state x="690" y="276" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581547372078" />
+    <state x="723" y="430" key="ComposerInitDialogKey" timestamp="1581883734340">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="723" y="430" key="ComposerInitDialogKey/0.0.1920.1040@0.0.1920.1040" timestamp="1581883734340" />
     <state x="683" y="319" key="NewPhpClassDialog" timestamp="1580565172983">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -375,13 +424,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="747" y="210" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1581061121455" />
+    <state x="646" y="94" width="627" height="852" key="find.popup" timestamp="1581531182732">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="646" y="94" width="627" height="852" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1581531182732" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1580844888813">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580844888813" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1581428896835">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1581887768191">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1581428896835" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1581887768191" />
   </component>
 </project>

@@ -11,6 +11,10 @@ use Illuminate\Support\Facades\Facade;
  *
  * @method static array breadcrumbList(...$args)
  *
+ *
+ *  @method static  grecaptcha($recaptchaClient)
+ *
+ *
  * @see \App\Helper\General
  */
 class General extends Facade

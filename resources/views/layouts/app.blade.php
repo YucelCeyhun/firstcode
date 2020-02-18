@@ -23,13 +23,14 @@
     <meta name="description" content="@yield('description')">
     <meta name="google-site-verification" content="..."/>
     @include('main.openGraph',compact('title'))
-    <title>@yield('title')@unless(request()->routeIs('main.home') || request()->routeIs('main.content.show'))
-            - {{env('APP_NAME')}}@endunless</title>
-
+    <title>@yield('title')@unless(request()->routeIs('main.home') || request()->routeIs('main.content.show')) - {{env('APP_NAME')}}@endunless</title>
     <link rel="stylesheet" href="{{asset('fonts/icofont/icofont.min.css')}}">
     <link href="{{ asset('css/tailwind.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="shortcut icon" href="{{asset('images/favicon.ico')}}">
+    <link rel="icon" type="image/png" href="{{asset('images/favicon-32x32.png')}}" sizes="32x32">
+    <link rel="icon" type="image/png" href="{{asset('images/favicon-16x16.png')}}" sizes="16x16">
+    @yield('grecaptcha')
     <!--<script data-ad-client="ca-pub-9833974853193702" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
 </head>
 <body class="bg-gray-200">
@@ -44,16 +45,21 @@
     <main>
         <div class="h-8 box-white bg-gray-100 px-3 text-xs text-gray-500 font-semibold flex items-center"
              style="z-index: 10;position: relative;" xmlns:svg="http://www.w3.org/1999/xhtml">
-            <ol vocab="https://schema.org/" typeof="BreadcrumbList">
-                <li class="inline-block"><a href="{{url('/')}}">Anasayfa</a></li>
+            <ol itemscope itemtype="https://schema.org/BreadcrumbList" >
+                <li class="inline-block" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="{{url('/')}}">
+                        <span itemprop="name">Anasayfa</span>
+                    </a>
+                    <meta itemprop="position" content="1">
+                </li>
                 @if (isset($breadcrumbList))
                     @foreach($breadcrumbList as $bread)
                         >
-                        <li class="inline-block" itemprop="itemListElement" itemscope
-                            itemtype="https://schema.org/ListItem">
-                            <a property="item" typeof="WebPage" href="{{$bread['url']}}"><span
-                                    property="name">{{$bread['name']}}</span></a>
-                            <meta property="position" content="{{$bread['position']}}">
+                        <li class="inline-block" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                            <a itemprop="item" href="{{$bread['url']}}">
+                                <span itemprop="name">{{$bread['name']}}</span>
+                            </a>
+                            <meta itemprop="position" content="{{$bread['position']}}">
                         </li>
                     @endforeach
                 @endif

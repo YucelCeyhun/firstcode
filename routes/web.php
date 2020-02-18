@@ -54,8 +54,5 @@ Route::prefix('fc-admin')->namespace('Admin')->name('fc-admin.')->group(function
     Route::get('login', 'AuthController@showLoginForm')->name('auth.show');
     Route::post('login', 'AuthController@login')->name('auth.login');
 
-
 });
-
-
 

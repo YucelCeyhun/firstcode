@@ -16,7 +16,7 @@ class General
     public function breadcrumbList()
     {
         $breadcrumbList = [];
-        $position = 1;
+        $position = 2;
         $args = func_get_args();
 
         foreach ($args as $arg) {
@@ -33,5 +33,31 @@ class General
         }
 
         return $breadcrumbList;
+    }
+
+    public function grecaptcha($recaptchaClient)
+    {
+        $ch = curl_init();
+        curl_setopt_array($ch, [
+            CURLOPT_URL => 'https://www.google.com/recaptcha/api/siteverify',
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_USERAGENT => $_SERVER['HTTP_USER_AGENT'],
+            CURLOPT_POST => true,
+            CURLOPT_POSTFIELDS => [
+                'secret' => env('RECAPTCHA_SECRET'),
+                'response' => $recaptchaClient
+            ],
+
+        ]);
+
+
+        $gresponse = curl_exec($ch);
+
+        curl_close($ch);
+
+        $gresponse = json_decode($gresponse);
+
+         return $gresponse->success;
+
     }
 }
